@@ -14,4 +14,25 @@ elif platform.system() =='Windows':
 else:
     print('Unknown system... sorry~~~~')
 
----------------------------------------------------------------------------------------------
+
+
+
+
+그래프에 대한 한글 폰트 문제 해결
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+
+import platform
+
+path = "c:/Windows/Fonts/malgun.ttf"
+from matplotlib import font_manager, rc
+if platform.system() == 'Darwin':
+    rc('font', family='AppleGothic')
+elif platform.system() == 'Windows':
+    font_name = font_manager.FontProperties(fname=path).get_name()
+    rc('font', family=font_name)
+else:
+    print('Unknown system... sorry~~~~') 
+
