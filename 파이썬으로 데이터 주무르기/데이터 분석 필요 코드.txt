@@ -48,3 +48,10 @@ elif platform.system() == 'Windows':
 else:
     print('Unknown system... sorry~~~~') 
 
+
+
+행열 이름을 바꾸고 싶을 때 rename 을 사용한다
+
+df_reverse.rename(columns={df_reverse.columns[13]:'외인'}, inplace =True)
+df_reverse.head()
+
