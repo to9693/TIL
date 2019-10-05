@@ -22,36 +22,15 @@ else:
 
 
 
-
-
-그래프에 대한 한글 폰트 문제 해결
-
-
-
-import  pandas as pd
-
-import numpy as np
-
-import matplotlib.pyplot as plt
-import seaborn as sns
-%matplotlib inline
-
-import platform
-
-path = "c:/Windows/Fonts/malgun.ttf"
-from matplotlib import font_manager, rc
-if platform.system() == 'Darwin':
-    rc('font', family='AppleGothic')
-elif platform.system() == 'Windows':
-    font_name = font_manager.FontProperties(fname=path).get_name()
-    rc('font', family=font_name)
-else:
-    print('Unknown system... sorry~~~~') 
-
-
-
 행열 이름을 바꾸고 싶을 때 rename 을 사용한다
 
 df_reverse.rename(columns={df_reverse.columns[13]:'외인'}, inplace =True)
 df_reverse.head()
 
+drop 함수
+
+DataFrame.drop(laebls,axis, inplace) -형식
+
+반환값은 변환된 DataFrame
+
+Dataframe 에서 칼럼이나 인덱스의 이름들을 가져오고 싶으면 .columns, .index
