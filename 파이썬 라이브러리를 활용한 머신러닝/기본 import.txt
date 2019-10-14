@@ -26,7 +26,10 @@ from sklearn.datasets import make_circles
 
 from sklearn.preprocessing import MinMaxScaler
 
+from sklearn.preprocessing import QuantileTransformer, StandardScaler
 
+from sklearn.decomposition import NMF
+from sklearn.decomposition import PCA
 
 import platform
 
