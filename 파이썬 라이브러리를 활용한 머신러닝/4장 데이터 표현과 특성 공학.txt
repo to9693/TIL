@@ -1,0 +1,5 @@
+특정 애플리케이션에서 가장 적합한 데이터 표현을 찾는것을 특성 공학(feature engineering)이라 한다. 
+
+범주형 변수를 표현하는데 가장 널리 쓰이는 방법은 원-핫-인코딩(one-hot-encoding)이다. 이를 원-아웃-오프-엔 코딩(one-out-of-N encoding) 혹은 가변수(dummy variable)라도고 한다. 
+
+pandas에서는 get_dummies 함수를 사용해 데이터를 매우 쉽게 인고딩할 수 있다. get_dummies 함수는 객체타입(문자열 같은)이나 범주형을 가진 열을 자동으로 변환 해준다.
